@@ -7,9 +7,8 @@ interface IAds {
     fun initialize(
         activity: Activity,
         iInitialize: IInitialize,
-        testDevices: List<String>? = listOf("")
     )
-
+    fun setTestDevices(activity: Activity, testDevices: List<String>)
     fun loadGdpr(activity: Activity, childDirected: Boolean)
     fun showBanner(
         activity: Activity,
@@ -18,7 +17,6 @@ interface IAds {
         adUnitId: String,
         callbackAds: CallbackAds?
     )
-
     fun loadInterstitial(activity: Activity, adUnitId: String)
     fun showInterstitial(activity: Activity, adUnitId: String, callbackAds: CallbackAds?)
     fun showNativeAds(
@@ -28,7 +26,6 @@ interface IAds {
         adUnitId: String,
         callbackAds: CallbackAds?
     )
-
     fun loadRewards(activity: Activity, adUnitId: String)
     fun showRewards(
         activity: Activity,
