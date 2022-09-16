@@ -1,13 +1,15 @@
-package com.adsmanager.core
+package com.adsmanager.core.`interface`
 
 import android.app.Activity
 import android.widget.RelativeLayout
+import com.adsmanager.core.IRewards
 
 interface IAds {
     fun initialize(
         activity: Activity,
         iInitialize: IInitialize,
     )
+
     fun setTestDevices(activity: Activity, testDevices: List<String>)
     fun loadGdpr(activity: Activity, childDirected: Boolean)
     fun showBanner(
@@ -17,6 +19,7 @@ interface IAds {
         adUnitId: String,
         callbackAds: CallbackAds?
     )
+
     fun loadInterstitial(activity: Activity, adUnitId: String)
     fun showInterstitial(activity: Activity, adUnitId: String, callbackAds: CallbackAds?)
     fun showNativeAds(
@@ -26,6 +29,7 @@ interface IAds {
         adUnitId: String,
         callbackAds: CallbackAds?
     )
+
     fun loadRewards(activity: Activity, adUnitId: String)
     fun showRewards(
         activity: Activity,
@@ -35,30 +39,4 @@ interface IAds {
     )
 }
 
-interface IInitialize {
-    fun onInitializationComplete()
-}
 
-data class RewardsItem(
-    val amount: Int?,
-    val type: String?,
-)
-
-interface IRewards {
-    fun onUserEarnedReward(rewardsItem: RewardsItem?)
-}
-
-abstract class CallbackAds {
-    open fun onAdLoaded() {}
-    open fun onAdFailedToLoad(error: String? = "") {}
-}
-
-enum class SizeBanner {
-    SMALL,
-    MEDIUM
-}
-
-enum class SizeNative {
-    SMALL,
-    MEDIUM
-}
