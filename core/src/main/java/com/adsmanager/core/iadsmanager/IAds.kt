@@ -1,4 +1,4 @@
-package com.adsmanager.core.`interface`
+package com.adsmanager.core.iadsmanager
 
 import android.app.Activity
 import android.widget.RelativeLayout
