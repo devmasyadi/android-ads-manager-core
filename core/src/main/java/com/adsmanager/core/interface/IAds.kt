@@ -2,6 +2,7 @@ package com.adsmanager.core.`interface`
 
 import android.app.Activity
 import android.widget.RelativeLayout
+import com.adsmanager.core.CallbackAds
 import com.adsmanager.core.IRewards
 
 interface IAds {

@@ -1,4 +1,4 @@
-package com.adsmanager.core.`interface`
+package com.adsmanager.core
 
 abstract class CallbackAds {
     open fun onAdLoaded() {}
