@@ -1,13 +1,14 @@
 package com.adsmanager.core.iadsmanager
 
 import android.app.Activity
+import android.content.Context
 import android.widget.RelativeLayout
 import com.adsmanager.core.CallbackAds
 import com.adsmanager.core.IRewards
 
 interface IAds {
     fun initialize(
-        activity: Activity,
+        context: Context,
         iInitialize: IInitialize,
     )
 
