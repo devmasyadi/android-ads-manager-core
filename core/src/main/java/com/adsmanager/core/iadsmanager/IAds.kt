@@ -9,7 +9,8 @@ import com.adsmanager.core.IRewards
 interface IAds {
     fun initialize(
         context: Context,
-        iInitialize: IInitialize,
+        appId: String?,
+        iInitialize: IInitialize?,
     )
 
     fun setTestDevices(activity: Activity, testDevices: List<String>)
