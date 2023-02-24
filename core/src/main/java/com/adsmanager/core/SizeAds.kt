@@ -1,4 +1,4 @@
-package com.adsmanager.core.iadsmanager
+package com.adsmanager.core
 
 enum class SizeBanner {
     SMALL,
@@ -7,5 +7,6 @@ enum class SizeBanner {
 
 enum class SizeNative {
     SMALL,
+    SMALL_RECTANGLE,
     MEDIUM
 }

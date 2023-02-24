@@ -4,7 +4,9 @@ import android.app.Activity
 import android.content.Context
 import android.widget.RelativeLayout
 import com.adsmanager.core.CallbackAds
-import com.adsmanager.core.IRewards
+import com.adsmanager.core.rewards.IRewards
+import com.adsmanager.core.SizeBanner
+import com.adsmanager.core.SizeNative
 
 interface IAds {
     fun initialize(

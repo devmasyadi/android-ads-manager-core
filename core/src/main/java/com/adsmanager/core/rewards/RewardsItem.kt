@@ -1,4 +1,4 @@
-package com.adsmanager.core
+package com.adsmanager.core.rewards
 
 data class RewardsItem(
     val amount: Int?,
