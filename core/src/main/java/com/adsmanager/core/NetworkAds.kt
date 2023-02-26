@@ -6,5 +6,6 @@ enum class NetworkAds {
     APPLOVIN_MAX,
     APPLOVIN_DISCOVERY,
     START_IO,
-    UNITY_ADS
+    UNITY_ADS,
+    NONE
 }
