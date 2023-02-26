@@ -16,10 +16,10 @@ object ConfigAds {
     var tertiaryOpenAdId = ""
     var quaternaryOpenAdId = ""
 
-    var primaryAds: NetworkAds = NetworkAds.ADMOB
-    var secondaryAds: NetworkAds? = null
-    var tertiaryAds: NetworkAds? = null
-    var quaternaryAds: NetworkAds? = null
+    var primaryAds: NetworkAds = NetworkAds.NONE
+    var secondaryAds: NetworkAds = NetworkAds.NONE
+    var tertiaryAds: NetworkAds = NetworkAds.NONE
+    var quaternaryAds: NetworkAds = NetworkAds.NONE
 
     var primaryAppId = ""
     var secondaryAppId = ""
